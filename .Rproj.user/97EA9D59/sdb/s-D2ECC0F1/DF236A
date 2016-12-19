@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "### Contact\n\n- `Vancomycin TDM KR` Shiny developer: Sungpil Han <shan@acp.kr> <https://shanmdphd.github.io>\n- Acknowledgements : The main idea and intellectual resources were provided by Professor Hyeong-Seok Lim, MD, PhD.\n- Copyright: 2016, Sungpil Han\n- License: GPL-3\n",
+    "created" : 1482132588916.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3550874492",
+    "id" : "DF236A",
+    "lastKnownWriteTime" : 1482133494,
+    "last_content_update" : 1482133494659,
+    "path" : "~/GIT/shiny/vtdm/CONTACT.md",
+    "project_path" : "CONTACT.md",
+    "properties" : {
+    },
+    "relative_order" : 5,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "markdown"
+}

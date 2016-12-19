@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "library(shiny)\nlibrary(ggplot2)\nlibrary(dplyr)\nlibrary(markdown)\nlibrary(mgcv)\nlibrary(psych)\n\nnavbarPage(\n    title = \"Vancomycin TDM KR\",\n    tabPanel(\n        title = \"Single\",\n        sidebarLayout(\n            sidebarPanel(\n                sliderInput(\n                    inputId = \"concCCR\",  \n                    label = \"CCR\", \n                    min = 1, max = 150, value = 100, step = 1),\n                #helpText('help'),\n                \n                sliderInput('concDose', 'Vancomycin Dose (mg)', min=0, max=2000,\n                            value=1000, step=5),\n                sliderInput('concNum', 'Simulations N', min=5, max=2000,\n                            value=20, step=5),\n                checkboxInput(inputId = \"Log\", label = \"Log scale\")\n            ),\n            \n            mainPanel(\n                tags$h3(\"Concentration-time Curves of Vancomycin\"),\n                plotOutput(\"concplot\"),\n                includeMarkdown(\"reference.md\"),\n                tags$h3(\"Descriptive Statistics of PK parameters\"),\n                tableOutput(\"conccontents\"),\n                tags$h3(\"Individual PK parameters\"),\n                dataTableOutput(\"showdata\"),\n                checkboxInput(inputId = \"showme\", label = \"Show me all the data entries together.\"),\n                tableOutput(\"showdataall\")\n            )\n        )\n    ),\n    \n    tabPanel(\n        title = \"Help\", \n        withMathJax(includeMarkdown(\"README.md\"))\n    ),\n    \n    tabPanel(\n        title = \"Contact\", \n        includeMarkdown(\"CONTACT.md\"),\n        includeHTML(\"disqus.html\"),\n        includeMarkdown(\"app.md\")\n    )\n)",
+    "created" : 1482131686890.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2360172930",
+    "id" : "F0B9E223",
+    "lastKnownWriteTime" : 1482133822,
+    "last_content_update" : 1482133822832,
+    "path" : "~/GIT/shiny/vtdm/ui.R",
+    "project_path" : "ui.R",
+    "properties" : {
+        "marks" : "<:7,0\n>:7,0"
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
