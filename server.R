@@ -128,7 +128,7 @@ shinyServer(function(input, output, session) {
         concRed <- as.numeric(input$concrange[2])
         concGreen <- as.numeric(input$concrange[1])
         
-        p <- ggplot(ggConc, aes(x=Time, y=Conc)) + 
+        p <- ggplot(ggConc, aes(x=Time, y=Conc)) + theme_linedraw() +
             labs(x = "Time (hour)", y = "Concentration (mg/L)",
                  title = paste0("Single Dosing of Vancomycin ", 
                            input$concDose, " mg IV Infusion for ", input$concDUR, 
@@ -162,7 +162,7 @@ shinyServer(function(input, output, session) {
         }
         superRed <- as.numeric(input$superrange[2])
         superGreen <- as.numeric(input$superrange[1])
-        p <- ggplot(ggsuper, aes(x=Time, y=Conc)) + #, group=Subject, colour = Conc)) + #Subject)) +
+        p <- ggplot(ggsuper, aes(x=Time, y=Conc)) + theme_linedraw() +
             labs(x = "Time (hour)", y = "Concentration (mg/L)",
                  title = paste0("Multiple Dosing of Vancomycin ", 
                            input$superDose, " mg IV Infusion for ", input$superDUR, 

@@ -50,7 +50,7 @@ navbarPage(
         )
     ),
     tabPanel(
-        title = "Multi",
+        title = "Multiple",
         sidebarLayout(
             sidebarPanel(
                 h4("Dosing Information"),
