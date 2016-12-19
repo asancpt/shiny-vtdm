@@ -53,7 +53,7 @@ C_2\ (mg/L) & = \frac{k_{21} - \lambda_2}{V_1 \cdot (\lambda_1 - \lambda_2)} \ne
 During\ infusion &\newline
 C_p\ (mg/L) &= \frac{Rate}{\lambda_1} \cdot C_1 \cdot (1 - e^{-\lambda_1 \cdot t}) + \frac{Rate}{\lambda_2} \cdot C_2 \cdot (1 - e^{-\lambda_2 \cdot t}) \newline
 After\ infusion &\newline
-C_p\ (mg/L) &= \frac{Rate}{\lambda_1} \cdot C_1 \cdot (1 - e^{-\lambda_1 \cdot DUR}) \cdot e^{-\lambda_1 \cdot t} + \frac{Rate}{\lambda_2} \cdot C_2 \cdot (1 - e^{-\lambda_2 \cdot DUR}) \cdot e^{-\lambda_2 \cdot t} \newline
+C_p\ (mg/L) &= \frac{Rate}{\lambda_1} \cdot C_1 \cdot (1 - e^{-\lambda_1 \cdot DUR}) \cdot e^{-\lambda_1 \cdot t} + \frac{Rate}{\lambda_2} \cdot C_2 \cdot (1 - e^{-\lambda_2 \cdot (t-DUR)}) \cdot e^{-\lambda_2 \cdot (t-DUR)} \newline
 \end{split}
 $$
 
